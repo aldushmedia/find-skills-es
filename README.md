@@ -58,13 +58,23 @@ crear tu propia skill si es algo que haces seguido.
 
 ## 3. Lo que necesitas antes de empezar
 
-### Claude Code
+### La app de Claude (pestaña "Code")
 
-find-skills corre comandos en tu computadora, así que necesitas **Claude Code** (en la terminal, en
-la app de escritorio de Claude o en la extensión de VS Code o JetBrains). En el chat normal de
-claude.ai en el navegador no puede instalar nada.
+find-skills necesita **Claude Code**, que es la parte de Claude que puede trabajar en tu computadora.
+No hace falta saber programar ni usar la terminal: viene dentro de la app de Claude.
+
+1. Descarga la app en [claude.com/download](https://claude.com/download) (Mac o Windows) e instálala
+   como cualquier programa.
+2. Entra con tu cuenta. Necesitas el plan **Pro** o uno más alto.
+3. Arriba verás la pestaña **"Code"**: ahí es donde vas a usar la skill.
+
+En el chat normal de claude.ai en el navegador no funciona, porque ahí Claude no puede instalar
+nada. Si ya usas Claude Code en la terminal o en VS Code o JetBrains, también sirve.
 
 ### Node.js 22.20 o superior
+
+Node.js es un programa gratis que la skill usa para buscar e instalar. Si no lo tienes, Claude te
+avisa y te guía; esta parte es por si prefieres instalarlo tú.
 
 La skill usa el programa `npx skills`, que viene con Node.js. No hay que instalar nada más: `npx`
 lo descarga solo la primera vez.
@@ -95,9 +105,29 @@ node --version
 
 ## 4. Instalación paso a paso
 
-Elige **una** de estas formas. Si no sabes cuál, usa la opción A.
+Elige **una** de estas formas. Si nunca has usado una terminal, usa la primera: todo se hace desde
+la app.
 
-### Opción A (recomendada): con un solo comando, para todos tus proyectos
+### La más fácil: desde la app de Claude
+
+1. Abre la app de Claude y toca la pestaña **"Code"**.
+2. Elige una **carpeta vacía** (puedes crear una en tu escritorio que se llame `Claude`). Es la
+   carpeta donde Claude va a trabajar.
+3. En el cuadro donde se escribe, pon `/plugin` y presiona Enter.
+4. Toca **"+ Add"** y luego **"Add marketplace"**.
+5. Pega esto y confirma:
+
+   ```
+   aldushmedia/find-skills-es
+   ```
+
+6. Toca **"Sync"** y después **"Add"** para instalar `find-skills`.
+7. ¡Listo! Pídele: "Busca una skill para hacer carruseles de Instagram".
+
+Si Claude te dice que le falta **Node.js**, dile que sí: te explica cómo instalarlo (o lo instala
+contigo) y luego sigue. Si prefieres hacerlo tú, mira la sección 3.
+
+### Opción A: con un solo comando en la terminal, para todos tus proyectos
 
 Pega esto en la terminal y presiona Enter:
 
@@ -365,11 +395,15 @@ administrador.
 No. La skill, el CLI y skills.sh son gratis. Solo usas tu plan normal de Claude.
 
 **¿Funciona en el chat de claude.ai en el navegador?**
-No, porque necesita correr comandos en tu computadora. Usa Claude Code (terminal, app de escritorio
-o extensión de VS Code o JetBrains).
+No, porque necesita correr comandos en tu computadora. Usa la pestaña "Code" de la app de Claude
+(o Claude Code en la terminal, VS Code o JetBrains).
+
+**¿Qué plan de Claude necesito?**
+Pro o uno más alto, porque la pestaña "Code" no viene en el plan gratis.
 
 **¿Necesito saber programar?**
-No. Solo pegar un comando en la terminal una vez (sección 4). Después le hablas a Claude normal.
+No. Se instala desde la app de Claude, en la pestaña "Code" (sección 4). Después le hablas a Claude
+normal, como a un amigo.
 
 **¿Me instala cosas sin preguntar?**
 No. Te muestra las opciones y solo instala si le dices que sí.
