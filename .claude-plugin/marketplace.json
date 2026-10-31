@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "find-skills-es",
+  "description": "La skill find-skills para Claude Code, en español",
+  "owner": {
+    "name": "Aldush Media",
+    "url": "https://github.com/aldushmedia"
+  },
+  "plugins": [
+    {
+      "name": "find-skills",
+      "description": "Busca skills en skills.sh según lo que necesitas, revisa instalaciones, fuente y estrellas en GitHub, y las instala con npx skills.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/aldushmedia/find-skills-es"
+    }
+  ]
+}
